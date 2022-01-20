@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
     }
 
     res.header({
-        'x-user-address': '0x6a4E301700C845Fb9253917EdD8bb27666Ba8A8D'
+        'x-user-address': '0x6a4E301700C845Fb9253917EdD8bb27666Ba8A8D',
+        'x-gamebag-address': '0xe89F1f1a696e2d6961A84025e06Ce401b0470D26'
     }).send('x-user-address response header added');
 });
 

@@ -5,7 +5,7 @@ metadata:
   annotations:  # annotations are some higher-level config
     kubernetes.io/ingress.class: 'nginx'
     nginx.ingress.kubernetes.io/auth-url: 'http://add-header-cluster-ip.default.svc.cluster.local:3001/'
-    nginx.ingress.kubernetes.io/auth-response-headers: 'x-user-address'
+    nginx.ingress.kubernetes.io/auth-response-headers: 'x-user-address,x-gamebag-address'
 spec:
   rules:
     - http:
