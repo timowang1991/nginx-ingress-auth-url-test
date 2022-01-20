@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-add-header": "docker build -f src/dockerfile.add-header-server -t timowang1991/add-header-server:latest .",
+    "build-node": "docker build -f src/dockerfile.server -t timowang1991/express-simple-server:latest .",
+    "push-add-header": "docker push timowang1991/add-header-server:latest",
+    "push-node": "docker push timowang1991/express-simple-server:latest",
+    "start-add-header-dev": "nodemon src/add-header-server",
+    "start-node-dev": "nodemon src/server",
+    "start-add-header": "node src/add-header-server",
+    "start-node": "node src/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
