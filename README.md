@@ -5,6 +5,11 @@ kubectl apply -f k8s/
 
 * open browser http://localhost
 
+# How to stop
+```
+kubectl delete -f k8s/
+```
+
 <br/><br/>
 
 # How to build
@@ -14,6 +19,8 @@ npm run build-node
 npm run push-add-header
 npm run push-node
 ```
+
+<br/><br/>
 
 # References
 * [ingress-nginx user guide](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#external-authentication)
